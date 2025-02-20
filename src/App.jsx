@@ -1,8 +1,28 @@
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from "./pages/home";
+import Womens from "./pages/womens";
+//mport Womens from "./pages/womens";
+import Perfume from "./pages/perfume";
+import Hotoffers from "./pages/hotoffers";
+
 function App() {
   return (
-    <div className="flex justify-center items-center bg-green-500 w-full h-screen">
-      <h1 className="text-6xl font-bold text-white">Fira </h1>
-    </div>
+   
+  
+    
+    <Router>
+      <div className="">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/womens" element={<Womens />} />
+          {/* <Route path="/womens" element={<Womens />} /> */}
+          <Route path="/perfume" element={<Perfume />} />
+          <Route path="/hotoffers" element={<Hotoffers />} />
+        </Routes>
+      </div>
+    </Router>
+
+    
   );
 }
 
