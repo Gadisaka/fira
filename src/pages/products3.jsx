@@ -1,9 +1,9 @@
-import inno1 from "../assets/perfume1.jpg"
-import inno2 from "../assets/perfume2.jpg"
-import inno3 from "../assets/perfume3.jpg"
-import inno4 from "../assets/perfume4.jpg"
-import inno5 from "../assets/perfume5.jpg"
-import inno6 from "../assets/perfume6.jpg"
+import inno1 from "../assets/hotoffer1.jpg"
+import inno2 from "../assets/hotoffer2.jpg"
+import inno3 from "../assets/hotoffer3.jpg"
+import inno4 from "../assets/hotoffer4.jpg"
+import inno5 from "../assets/hotoffer5.jpg"
+import inno6 from "../assets/hotoffer6.jpg"
 //import Store from "./Store";
 const clothes = [
   {
@@ -56,7 +56,7 @@ const ClothesCollection = () => {
     <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {clothes.map((item) => (
         <div key={item.id} className="border border-gray-300 rounded-lg p-4 shadow-lg bg-white">
-          <img src={item.image} alt={item.title} className="w-full h-60 object-cover rounded-md opacity-75 hover:opacity-100" />
+          <img src={item.image} alt={item.title} className="w-full h-80  object-cover rounded-md opacity-75 hover:opacity-100" />
           <h2 className="text-lg font-semibold mt-2">{item.title}</h2>
           <p className="text-gray-700">{item.price}</p>
           <p className="text-yellow-500">⭐ {item.rating}</p>
