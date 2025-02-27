@@ -4,6 +4,8 @@ import inno3 from "../assets/perfume3.jpg"
 import inno4 from "../assets/perfume4.jpg"
 import inno5 from "../assets/perfume5.jpg"
 import inno6 from "../assets/perfume6.jpg"
+
+import { useState } from "react"
 //import Store from "./Store";
 const productsPage2 = [
   {
@@ -58,6 +60,21 @@ const productsPage2 = [
 
 
 const ClothesCollection = () => {
+  const [counts, setCounts] = useState({});
+  
+    const handleIncrease = (id) => {
+      setCounts((prevCounts) => ({
+        ...prevCounts,
+        [id]: (prevCounts[id] || 0) + 1,
+      }));
+    };
+  
+    const handleDecrease = (id) => {
+      setCounts((prevCounts) => ({
+        ...prevCounts,
+        [id]: Math.max((prevCounts[id] || 0) - 1, 0),
+      }));
+    };
   return (
     <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {productsPage2.map((item) => (
@@ -66,6 +83,21 @@ const ClothesCollection = () => {
           <h2 className="text-lg font-semibold mt-2">{item.name}</h2>
           <p className="text-gray-700">{item.price}</p>
           <p className="text-yellow-500">⭐ {item.rating}</p>
+          <div className="flex justify-between items-center mt-4 px-10">
+            <button
+              onClick={() => handleDecrease(item.id)}
+              className="bg-red-500 text-white p-2 rounded hover:bg-red-600"
+            >
+              -
+            </button>
+            <p className="text-lg font-semibold">{counts[item.id] || 0}</p>
+            <button
+              onClick={() => handleIncrease(item.id)}
+              className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+            >
+              +
+            </button>
+          </div>
         </div>
       ))}
     </div>
