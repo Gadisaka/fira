@@ -6,13 +6,17 @@ import Perfume from "./pages/perfume";
 import Hotoffers from "./pages/hotoffers";
 import Register from './pages/register';
 import Login from "./pages/login";
+import CartPage from "./pages/CartPage";
+import { CartProvider } from "./pages/CartContext";
+
 function App() {
   return (
    
-  
+  <CartProvider>
     
     <Router>
       <div className="">
+      
         <Routes>
           <Route path="/" element={<Register />} />
           <Route path="/home" element={<Home />} />
@@ -20,9 +24,12 @@ function App() {
           <Route path="/login" element={<Login />} /> 
           <Route path="/perfume" element={<Perfume />} />
           <Route path="/hotoffers" element={<Hotoffers />} />
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
       </div>
     </Router>
+
+    </CartProvider>
 
     
   );

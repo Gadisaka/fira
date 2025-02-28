@@ -1,7 +1,8 @@
-import {  Link } from "react-router-dom";
+import {  Link,useNavigate } from "react-router-dom";
 
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <div>
     
@@ -13,6 +14,12 @@ function Navbar() {
          {/* <Link to="/womens" className="hover:text-pink-500 hover:border-b-2 border-pink-500">Womens</Link> */}
           <Link to="/perfume" className="hover:text-pink-500 hover:border-b-2 border-pink-500">Perfume</Link>
           <Link to="/hotoffers" className="hover:text-pink-500 hover:border-b-2 border-pink-500">Hot Offers</Link>
+          <button
+        onClick={() => navigate("/cart")}
+        className="w-1/10 bg-pink-500 text-white mt-6 py-3 rounded-lg hover:bg-pink-900"
+      >
+        View Cart
+      </button>
         </nav>
 
        

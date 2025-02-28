@@ -1,5 +1,5 @@
 import Toper from "./toper";
-import Toper2 from "./toper2";
+//import Toper2 from "./toper2";
 import Footer from "./footer";
 import Slider from "./slider";
 import Navbar from "./navbar";
@@ -9,7 +9,7 @@ function home() {
   return (
     <div>
       <Toper />
-      <Toper2 />
+      {/* <Toper2 /> */}
       <Navbar />
       <Slider />
       <Detail />
