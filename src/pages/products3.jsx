@@ -8,7 +8,6 @@ import inno4 from "../assets/hotoffer4.jpg"
 import inno5 from "../assets/hotoffer5.jpg"
 import inno6 from "../assets/hotoffer6.jpg"
 
-
 //import Store from "./Store";
 const productsPage3 = [
          { id: 1, image: inno1, name: "Casual T-Shirt", price: 20, rating: 4.5 },
@@ -36,7 +35,7 @@ const ClothesCollection = () => {
           {/* Add to Cart Button */}
           <button
             onClick={() => addToCart(item)}
-            className="w-full bg-green-500 text-white mt-4 py-2 rounded hover:bg-green-600"
+            className="w-1/3 bg-pink-700 text-white mt-4 py-2 rounded cursor-pointer hover:bg-green-600"
           >
             Add to Cart
           </button>

@@ -33,7 +33,7 @@ const ClothesCollection = () => {
           {/* Add to Cart Button */}
           <button
             onClick={() => addToCart(item)}
-            className="w-full bg-green-500 text-white mt-4 py-2 rounded hover:bg-green-600"
+            className="w-1/3 bg-pink-700 text-white mt-4 py-2 rounded cursor-pointer hover:bg-green-600"
           >
             Add to Cart
           </button>

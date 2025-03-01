@@ -5,7 +5,7 @@ function womens() {
   return (
     <div>
     <Navbar />
-    <h1 className='text-3xl text-pink-500 font-bold text-center p-10'>WOMENS COLLECTION</h1>
+    <h1 className='text-3xl text-pink-500 font-bold text-center p-10'><span className='text-black'>WOMENS</span> COLLECTION</h1>
       <Products />
       <Footer />
     </div>
