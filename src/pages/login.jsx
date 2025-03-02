@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [formData, setFormData] = useState({
     email: "",
-    password: "",
+    password: "", 
   });
   const navigate = useNavigate();
 
@@ -50,14 +50,14 @@ const Login = () => {
           />
           <button
             type="submit"
-            className="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600"
+            className="w-full bg-pink-500 text-white p-2 rounded hover:bg-green-600"
           >
             Login
           </button>
         </form>
         <p className="text-sm text-center mt-4">
           Dont have an account?{" "}
-          <Link to="/register" className="text-green-500">Register here</Link>
+          <Link to="/register" className="text-pink-500">Register here</Link>
         </p>
       </div>
     </div>
