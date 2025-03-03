@@ -8,11 +8,14 @@ import Register from './pages/register';
 import Login from "./pages/login";
 import CartPage from "./pages/CartPage";
 import { CartProvider } from "./pages/CartContext";
+import { ProductProvider } from "./pages/productcontext";
+import AdminPage from "./pages/adminpage";
 
 function App() {
   return (
    
   <CartProvider>
+     <ProductProvider>
     
     <Router>
       <div className="">
@@ -25,10 +28,11 @@ function App() {
           <Route path="/perfume" element={<Perfume />} />
           <Route path="/hotoffers" element={<Hotoffers />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/admin" element={<AdminPage />} />
         </Routes>
       </div>
     </Router>
-
+    </ProductProvider>
     </CartProvider>
 
     

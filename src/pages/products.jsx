@@ -35,7 +35,7 @@ const ClothesCollection = () => {
             onClick={() => addToCart(item)}
             className="w-1/3 bg-pink-700 text-white mt-4 py-2 rounded cursor-pointer hover:bg-green-600"
           >
-            Add + to Cart
+            Add to Cart
           </button>
         </div>
       ))}
