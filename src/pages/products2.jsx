@@ -11,12 +11,12 @@ import inno6 from "../assets/perfume6.jpg"
 
 //import Store from "./Store";
 const productsPage2 = [
-   { id: 1, image: inno1, name: "Casual T-Shirt", price: 20, rating: 4.5 },
-    { id: 2, image: inno2, name: "Denim Jacket", price: 50, rating: 4.7 },
-    { id: 3, image: inno3, name: "Summer Dress", price: 35, rating: 4.6 },
-    { id: 4, image: inno4, name: "Casual T-Shirt", price: 20, rating: 4.5 },
-    { id: 5, image: inno5, name: "Denim Jacket", price: 50, rating: 4.7 },
-    { id: 6, image: inno6, name: "Summer Dress", price: 35, rating: 4.6 },
+   { id: 1, image: inno1, name: "Black Opium", price: 20, rating: 4.5 },
+    { id: 2, image: inno2, name: "bella perfume", price: 50, rating: 4.7 },
+    { id: 3, image: inno3, name: "Flower", price: 35, rating: 4.6 },
+    { id: 4, image: inno4, name: "Smell", price: 20, rating: 4.5 },
+    { id: 5, image: inno5, name: "channel", price: 50, rating: 4.7 },
+    { id: 6, image: inno6, name: "N5 ", price: 35, rating: 4.6 },
 ];
 
 
@@ -36,14 +36,14 @@ const ClothesCollection = () => {
           {/* Add to Cart Button */}
           <button
             onClick={() => addToCart(item)}
-            className="w-1/3 bg-pink-700 text-white mt-4 py-2 rounded cursor-pointer hover:bg-green-600"
+            className="w-1/3 bg-pink-700 text-white mt-4 py-2 rounded cursor-pointer hover:bg-gray-600"
           >
             Add to Cart
           </button>
         </div>
       ))}
 
-      {/* Go to Cart Button */}
+      
      
     </div>
   );

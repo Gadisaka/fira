@@ -1,15 +1,14 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter,  FaTelegram } from "react-icons/fa";
 
 function Toper() {
   return (
     <div className="flex flex-wrap items-center justify-between py-2 px-4 border-b-2 border-gray-200 text-sm sm:text-base">
       {/* Social Media Icons */}
       <div className="flex gap-3 text-lg sm:text-xl cursor-pointer">
-        <FaFacebook color="#1877F2" />
-        <FaInstagram color="#E4405F" />
-        <FaTwitter color="#1DA1F2" />
-        <FaLinkedin color="#0077B5" />
-        <FaYoutube color="#FF0000" />
+       <a href="https://web.facebook.com/ujee.man"> <FaFacebook color="#1877F2"  /></a>
+        <a href="https://www.instagram.com/fira_16____/" ><FaInstagram color="#E4405F" /></a>
+        <a href="https://x.com/MilkiKi171700"><FaTwitter color="#1DA1F2" /></a>
+        <a href="https://t.me/@Fl16f16"><FaTelegram color="#1877F2" /></a>
       </div>
 
       {/* Free Shipping */}

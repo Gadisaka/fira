@@ -8,7 +8,7 @@ import CartPage from "./pages/CartPage";
 import { CartProvider } from "./pages/CartContext";
 import { ProductProvider } from "./pages/productcontext";
 import AdminPage from "./pages/adminpage";
-
+import Policy from "./pages/policy";
 function App() {
   return (
    
@@ -25,6 +25,7 @@ function App() {
           <Route path="/hotoffers" element={<Hotoffers />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/admin" element={<AdminPage />} />
+          <Route path="/policy" element={<Policy />} />
         </Routes>
       </div>
     </Router>

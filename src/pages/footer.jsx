@@ -1,6 +1,8 @@
 import bgImage from "../assets/footer.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function App() {
+  const navigate = useNavigate();
   return (
     <div
       style={{
@@ -13,14 +15,14 @@ export default function App() {
       <div className="flex flex-col md:flex-row justify-between items-center text-white text-lg sm:text-xl font-light cursor-pointer gap-8">
         <div className="text-center md:text-left">
           <h1 className="font-bold text-pink-500">INNOO COLLECTION</h1>
-          <h1>Mens</h1>
+          <h1>Lexury</h1>
           <h1>Womens</h1>
           <h1>Perfume</h1>
           <h1>Hot Offers</h1>
         </div>
         <div className="text-center md:text-left">
           <h1 className="font-bold text-pink-500">About INNOO</h1>
-          <h1>Privacy Policy</h1>
+         <button onClick={()=>navigate("/policy")}><h1>Privacy Policy</h1></button> 
           <h1>Terms and Conditions</h1>
           <h1>Return Policy</h1>
           <h1>Shipping Policy</h1>

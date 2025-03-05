@@ -10,12 +10,12 @@ import inno6 from "../assets/hotoffer6.jpg"
 
 //import Store from "./Store";
 const productsPage3 = [
-         { id: 1, image: inno1, name: "Casual T-Shirt", price: 20, rating: 4.5 },
-         { id: 2, image: inno2, name: "Denim Jacket", price: 50, rating: 4.7 },
-         { id: 3, image: inno3, name: "Summer Dress", price: 35, rating: 4.6 },
-         { id: 4, image: inno4, name: "Casual T-Shirt", price: 20, rating: 4.5 },
-         { id: 5, image: inno5, name: "Denim Jacket", price: 50, rating: 4.7 },
-         { id: 6, image: inno6, name: "Summer Dress", price: 35, rating: 4.6 },
+         { id: 1, image: inno1, name: "jewellery", price: 20, rating: 4.5 },
+         { id: 2, image: inno2, name: "jewellery", price: 50, rating: 4.7 },
+         { id: 3, image: inno3, name: "jewellery", price: 35, rating: 4.6 },
+         { id: 4, image: inno4, name: "lexury  bag", price: 20, rating: 4.5 },
+         { id: 5, image: inno5, name: "summer dress", price: 50, rating: 4.7 },
+         { id: 6, image: inno6, name: "Denim Jacket", price: 35, rating: 4.6 },
 ];
 
 
@@ -34,7 +34,7 @@ const ClothesCollection = () => {
 
           <button
             onClick={() => addToCart(item)}
-            className="w-1/3 bg-pink-700 text-white mt-4 py-2 rounded cursor-pointer hover:bg-green-600"
+            className="w-1/3 bg-pink-700 text-white mt-4 py-2 rounded cursor-pointer hover:bg-gray-700"
           >
             Add to Cart
           </button>
