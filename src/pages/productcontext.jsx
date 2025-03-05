@@ -42,3 +42,4 @@ export const ProductProvider = ({ children }) => {
     </ProductContext.Provider>
   );
 };
+
